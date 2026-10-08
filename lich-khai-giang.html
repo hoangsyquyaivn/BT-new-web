@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch Khai Giảng Mới Nhất - BitTrain</title>
+  <meta name="description" content="Tra cứu lịch khai giảng các khóa học Quản lý dự án thực chiến PMP, PMI-ACP, Scaled Agile SAFe và workshop Agile Scrum mới nhất từ BitTrain.">
+  
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 1. TOPBAR -->
+  <aside class="bt-topbar" aria-label="Thông tin liên hệ nhanh">
+    <div class="bt-container bt-topbar__inner">
+      <div class="bt-topbar__contacts">
+        <a href="tel:0908106080" class="bt-topbar__item">
+          <span>📞 Hotline:</span> <strong>0908 106 080 / 0969 182 526</strong>
+        </a>
+        <a href="mailto:bittrain@bittrain.coach" class="bt-topbar__item">
+          <span>✉️</span> <span>bittrain@bittrain.coach</span>
+        </a>
+        <a href="https://zalo.me/0908106080" target="_blank" rel="noopener noreferrer" class="bt-topbar__item">
+          <span>💬 Zalo Tư Vấn</span>
+        </a>
+      </div>
+      <div class="bt-topbar__actions">
+        <a href="https://elearning.bittrain.coach/" target="_blank" rel="noopener noreferrer" class="bt-topbar__elearning">
+          <span>🎓</span> Đăng nhập E-Learning &rarr;
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. HEADER -->
+  <header class="bt-header" role="banner">
+    <div class="bt-container bt-header__inner">
+      <a href="index.html" class="bt-logo" aria-label="BitTrain Trang chủ">
+        <div class="bt-logo__brand">
+          <span class="bt-logo__bit">BIT</span><span class="bt-logo__train">TRAIN</span>
+          <span class="bt-logo__tagline">Agile & Project Management</span>
+        </div>
+      </a>
+
+      <nav class="bt-nav" role="navigation" aria-label="Menu chính">
+        <a href="index.html" class="bt-nav__link">Trang chủ</a>
+        <a href="san-pham.html" class="bt-nav__link">Sản phẩm & Đào tạo</a>
+        <a href="lich-khai-giang.html" class="bt-nav__link bt-nav__link--active">Lịch khai giảng</a>
+        <a href="bai-viet.html" class="bt-nav__link">Bài viết & Insights</a>
+        <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Đăng ký nhận lịch đào tạo mới nhất">
+          Nhận tư vấn 1:1
+        </button>
+      </nav>
+
+      <button type="button" class="bt-menu-toggle" aria-label="Mở menu di động">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- 3. PAGE HEADER HERO -->
+  <section class="bt-hero" style="padding: var(--bt-space-9) 0 var(--bt-space-8);">
+    <div class="bt-container" style="text-align: center;">
+      <span class="bt-hero__tag">Lịch Khai Giảng Đang Mở Đăng Ký</span>
+      <h1 class="bt-hero__title" style="font-size: 2.75rem;">Lịch Khai Giảng Các Khóa Học Mới Nhất</h1>
+      <p class="bt-hero__desc" style="margin: 0 auto; max-width: 700px;">
+        Các lớp học trực tuyến qua Zoom được sắp xếp linh hoạt vào buổi tối hoặc cuối tuần. Đăng ký sớm để nhận ưu đãi học phí và bộ tài liệu luyện thi độc quyền.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. MAIN SCHEDULE SECTION (BT-01, BT-14) -->
+  <section class="bt-section bt-section--light">
+    <div class="bt-container">
+      
+      <!-- BỘ LỌC ĐA TIÊU CHÍ (BT-14) -->
+      <div class="bt-filter-bar">
+        <div class="bt-filter-group">
+          <label for="filterCategory" style="font-weight:600; font-size:0.9rem; white-space:nowrap;">📚 Chủ đề / Chứng chỉ:</label>
+          <select id="filterCategory" class="bt-select">
+            <option value="all">Tất cả chương trình</option>
+            <option value="pmp">Luyện thi PMP (PMI)</option>
+            <option value="pmi-acp">Luyện thi PMI-ACP (PMI)</option>
+            <option value="safe">Scaled Agile (SAFe)</option>
+            <option value="scrum">Thực hành Agile / Scrum</option>
+            <option value="b2b">Doanh nghiệp / Leadership</option>
+          </select>
+        </div>
+
+        <div class="bt-filter-group">
+          <label for="filterFormat" style="font-weight:600; font-size:0.9rem; white-space:nowrap;">💻 Hình thức học:</label>
+          <select id="filterFormat" class="bt-select">
+            <option value="all">Tất cả hình thức</option>
+            <option value="zoom">Online qua Zoom tương tác</option>
+            <option value="elearning">Tự học E-Learning</option>
+            <option value="inhouse">Đào tạo In-house</option>
+          </select>
+        </div>
+
+        <button type="button" id="filterReset" class="bt-btn bt-btn--outline bt-btn--sm">
+          🔄 Xóa bộ lọc
+        </button>
+      </div>
+
+      <!-- BẢNG LỊCH KHAI GIẢNG (BT-01) -->
+      <div class="bt-schedule-table-wrap">
+        <table class="bt-schedule-table">
+          <thead>
+            <tr>
+              <th style="width:28%;">Khóa học & Chứng chỉ</th>
+              <th style="width:14%;">Thời gian khai giảng</th>
+              <th style="width:18%;">Lịch học chi tiết</th>
+              <th style="width:14%;">Hình thức</th>
+              <th style="width:12%;">Trạng thái</th>
+              <th style="width:14%; text-align:right;">Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- LỚP 1: PMP K48 -->
+            <tr class="js-schedule-row" data-category="pmp" data-format="zoom">
+              <td>
+                <div style="font-weight:700; color:var(--bt-color-text-dark); font-size:1rem;">
+                  Luyện Thi PMP® Thực Chiến (Khóa K48)
+                </div>
+                <div style="font-size:0.8rem; color:var(--bt-color-text-muted);">Cam kết hỗ trợ hồ sơ PMI & 90% đỗ lần 1</div>
+              </td>
+              <td><strong style="color:var(--bt-color-primary);">15/11/2026</strong></td>
+              <td>Thứ 7 & CN (18:30 - 21:30) • 14 buổi</td>
+              <td>Zoom tương tác trực tiếp</td>
+              <td><span class="bt-badge-status bt-badge-status--open">Đang nhận đăng ký</span></td>
+              <td style="text-align:right;">
+                <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Luyện thi PMP K48 (15/11/2026)">
+                  Đăng Ký Ngay
+                </button>
+              </td>
+            </tr>
+
+            <!-- LỚP 2: PMI-ACP K26 -->
+            <tr class="js-schedule-row" data-category="pmi-acp" data-format="zoom">
+              <td>
+                <div style="font-weight:700; color:var(--bt-color-text-dark); font-size:1rem;">
+                  Luyện Thi Agile PMI-ACP® (Khóa K26)
+                </div>
+                <div style="font-size:0.8rem; color:var(--bt-color-text-muted);">Thành thạo Scrum, Kanban, XP & TDD</div>
+              </td>
+              <td><strong style="color:var(--bt-color-primary);">22/11/2026</strong></td>
+              <td>Tối T3 & T5 (19:00 - 21:30) • 10 buổi</td>
+              <td>Zoom tương tác trực tiếp</td>
+              <td><span class="bt-badge-status bt-badge-status--open">Còn 5 chỗ</span></td>
+              <td style="text-align:right;">
+                <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Luyện thi PMI-ACP K26 (22/11/2026)">
+                  Đăng Ký Ngay
+                </button>
+              </td>
+            </tr>
+
+            <!-- LỚP 3: SAFe POPM -->
+            <tr class="js-schedule-row" data-category="safe" data-format="zoom">
+              <td>
+                <div style="font-weight:700; color:var(--bt-color-text-dark); font-size:1rem;">
+                  Scaled Agile - SAFe® 6.0 POPM
+                </div>
+                <div style="font-size:0.8rem; color:var(--bt-color-text-muted);">Cấp quyền dự thi Scaled Agile toàn cầu</div>
+              </td>
+              <td><strong style="color:var(--bt-color-primary);">05/12/2026</strong></td>
+              <td>2 Ngày Cuối Tuần (08:30 - 17:30)</td>
+              <td>Zoom tương tác trực tiếp</td>
+              <td><span class="bt-badge-status bt-badge-status--open">Đang nhận đăng ký</span></td>
+              <td style="text-align:right;">
+                <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Khóa học SAFe POPM (05/12/2026)">
+                  Đăng Ký Ngay
+                </button>
+              </td>
+            </tr>
+
+            <!-- LỚP 4: Agile Scrum Thực hành -->
+            <tr class="js-schedule-row" data-category="scrum" data-format="zoom">
+              <td>
+                <div style="font-weight:700; color:var(--bt-color-text-dark); font-size:1rem;">
+                  Thực Hành Quản Lý Dự Án Agile Scrum
+                </div>
+                <div style="font-size:0.8rem; color:var(--bt-color-text-muted);">Vận hành Sprint & giải quyết xung đột dự án</div>
+              </td>
+              <td><strong style="color:var(--bt-color-primary);">10/12/2026</strong></td>
+              <td>Tối T2 & T4 (19:00 - 21:30) • 6 buổi</td>
+              <td>Zoom tương tác trực tiếp</td>
+              <td><span class="bt-badge-status bt-badge-status--open">Đang nhận đăng ký</span></td>
+              <td style="text-align:right;">
+                <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Thực hành Agile Scrum (10/12/2026)">
+                  Đăng Ký Ngay
+                </button>
+              </td>
+            </tr>
+
+            <!-- LỚP 5: E-LEARNING (Tự học, luôn mở BT-01) -->
+            <tr class="js-schedule-row" data-category="pmp" data-format="elearning">
+              <td>
+                <div style="font-weight:700; color:var(--bt-color-text-dark); font-size:1rem;">
+                  Khóa Tự Học Trực Tuyến PMP® / Agile Video E-Learning
+                </div>
+                <div style="font-size:0.8rem; color:var(--bt-color-text-muted);">Trọn gói video bài giảng + Ngân hàng đề thi thử</div>
+              </td>
+              <td><strong style="color:var(--bt-color-secondary);">Học Bất Cứ Lúc Nào</strong></td>
+              <td>Tự sắp xếp thời gian (Truy cập 12 tháng)</td>
+              <td>Hệ thống E-Learning</td>
+              <td><span class="bt-badge-status bt-badge-status--self">Mở 24/7</span></td>
+              <td style="text-align:right;">
+                <a href="https://elearning.bittrain.coach/" target="_blank" rel="noopener noreferrer" class="bt-btn bt-btn--secondary bt-btn--sm">
+                  Vào Học Ngay &rarr;
+                </a>
+              </td>
+            </tr>
+
+            <!-- LỚP 6: DOANH NGHIỆP IN-HOUSE -->
+            <tr class="js-schedule-row" data-category="b2b" data-format="inhouse">
+              <td>
+                <div style="font-weight:700; color:var(--bt-color-text-dark); font-size:1rem;">
+                  Chuyển Đổi Agile & In-House Training Doanh Nghiệp
+                </div>
+                <div style="font-size:0.8rem; color:var(--bt-color-text-muted);">Agile Leadership, Agile HR, Business Teams</div>
+              </td>
+              <td><strong style="color:var(--bt-color-text-dark);">Theo Thỏa Thuận</strong></td>
+              <td>May đo theo khung giờ và mục tiêu của DN</td>
+              <td>Trực tiếp tại DN hoặc Zoom</td>
+              <td><span class="bt-badge-status bt-badge-status--open">Nhận yêu cầu tư vấn</span></td>
+              <td style="text-align:right;">
+                <button type="button" class="bt-btn bt-btn--outline bt-btn--sm js-open-modal" data-course="Tư vấn In-house doanh nghiệp">
+                  Đặt Lịch Tư Vấn
+                </button>
+              </td>
+            </tr>
+
+            <!-- LỚP 7: LỚP ĐÃ KẾT THÚC (Lưu trữ BT-01) -->
+            <tr class="js-schedule-row" data-category="pmp" data-format="zoom" style="opacity: 0.7; background:#F8FAFC;">
+              <td>
+                <div style="font-weight:600; color:var(--bt-color-text-muted); font-size:0.95rem;">
+                  Luyện Thi PMP® K47 (Đã bế giảng)
+                </div>
+                <div style="font-size:0.8rem; color:var(--bt-color-text-muted);">Khóa đã hoàn thành chương trình ôn luyện</div>
+              </td>
+              <td><span style="color:var(--bt-color-text-muted);">01/10/2026</span></td>
+              <td>Thứ 7 & CN (18:30 - 21:30)</td>
+              <td>Zoom tương tác</td>
+              <td><span class="bt-badge-status bt-badge-status--closed">Đã kết thúc</span></td>
+              <td style="text-align:right;">
+                <button type="button" class="bt-btn bt-btn--outline bt-btn--sm js-open-modal" data-course="Đăng ký nhận lịch khóa PMP tiếp theo">
+                  Báo Tôi Khóa Mới
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Thông báo khi filter không ra kết quả (BT-14) -->
+        <div id="scheduleEmptyNotice" style="display:none; padding:32px; text-align:center; color:var(--bt-color-text-muted);">
+          <div style="font-size:2rem; margin-bottom:8px;">🔍</div>
+          <p>Không tìm thấy lớp học nào khớp với bộ lọc của bạn.</p>
+          <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Yêu cầu mở lớp theo nhu cầu" style="margin-top:12px;">
+            Để lại yêu cầu để BitTrain mở lớp sớm nhất
+          </button>
+        </div>
+      </div>
+
+      <!-- Khối nhận thông báo lớp tiếp theo (BT-01) -->
+      <div style="margin-top: 40px; background: #EFFBFF; border: 1px solid #BAE6FD; border-radius: 12px; padding: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h4 style="color:#0369A1; font-size:1.15rem; margin-bottom:4px;">Chưa tìm thấy lịch học phù hợp với thời gian của bạn?</h4>
+          <p style="color:#0C4A6E; font-size:0.9rem;">Hãy để lại thông tin, đội ngũ BitTrain sẽ gửi lịch khai giảng dự kiến các khóa tiếp theo vào email của bạn ngay khi công bố.</p>
+        </div>
+        <button type="button" class="bt-btn bt-btn--secondary js-open-modal" data-course="Đăng ký nhận thông báo lịch mới">
+          🔔 Nhận Thông Báo Lịch Mới
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. FOOTER -->
+  <footer class="bt-footer" role="contentinfo">
+    <div class="bt-container">
+      <div class="bt-footer-grid">
+        <div>
+          <div class="bt-logo" style="margin-bottom: 16px;">
+            <div class="bt-logo__brand" style="font-size:1.6rem;">
+              <span class="bt-logo__bit">BIT</span><span class="bt-logo__train" style="color:#FFF;">TRAIN</span>
+            </div>
+          </div>
+          <p style="color:#CBD5E1; font-weight:600; margin-bottom:12px;">CÔNG TY TNHH TƯ VẤN VÀ ĐÀO TẠO BITTRAIN</p>
+          <div class="bt-footer-contact-item">
+            <span>📍</span> <span>10 Đường TA35, Phường Thới An, Thành phố Hồ Chí Minh</span>
+          </div>
+          <div class="bt-footer-contact-item">
+            <span>📞</span> <span>Hotline: 0908 106 080 / 0969 182 526</span>
+          </div>
+          <div class="bt-footer-contact-item">
+            <span>✉️</span> <span>Email: bittrain@bittrain.coach</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="bt-footer-col__title">Khóa Học & Chứng Chỉ</h4>
+          <ul class="bt-footer-links">
+            <li><a href="san-pham.html#pmp">Luyện thi PMP® Quốc Tế</a></li>
+            <li><a href="san-pham.html#pmi-acp">Luyện thi PMI-ACP®</a></li>
+            <li><a href="san-pham.html#safe">Scaled Agile Framework (SAFe)</a></li>
+            <li><a href="san-pham.html#agile-scrum">Thực hành Agile / Scrum</a></li>
+            <li><a href="san-pham.html#design-thinking">Design Thinking & JTBD</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="bt-footer-col__title">Dành Cho Doanh Nghiệp</h4>
+          <ul class="bt-footer-links">
+            <li><a href="san-pham.html#doanh-nghiep">Huấn luyện chuyển đổi Agile</a></li>
+            <li><a href="san-pham.html#doanh-nghiep">Agile for Business Teams</a></li>
+            <li><a href="san-pham.html#doanh-nghiep">Đào tạo Agile Leadership</a></li>
+            <li><a href="san-pham.html#doanh-nghiep">Quản trị nhân sự Agile HR</a></li>
+            <li><a href="lich-khai-giang.html">Lịch khai giảng các lớp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="bt-footer-col__title">Tài Nguyên & Kết Nối</h4>
+          <ul class="bt-footer-links">
+            <li><a href="bai-viet.html">BitTrain Insights & Cẩm nang</a></li>
+            <li><a href="https://elearning.bittrain.coach/" target="_blank" rel="noopener noreferrer">Cổng E-Learning Học Viên</a></li>
+            <li><a href="https://www.facebook.com/bittrain.coach" target="_blank" rel="noopener noreferrer">Fanpage Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/hoangsyquypmp/" target="_blank" rel="noopener noreferrer">LinkedIn Chuyên Gia</a></li>
+            <li><a href="https://zalo.me/0908106080" target="_blank" rel="noopener noreferrer">Tư vấn qua Zalo 24/7</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bt-footer-bottom">
+      <div class="bt-container bt-footer-bottom__inner">
+        <div>© 2026 CÔNG TY TNHH TƯ VẤN VÀ ĐÀO TẠO BITTRAIN. All rights reserved.</div>
+        <div>Cam kết chất lượng thực chiến – Đồng hành thành công cùng học viên và doanh nghiệp.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 6. MODAL ĐĂNG KÝ NHANH -->
+  <div id="registrationModal" class="bt-modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="bt-modal">
+      <div class="bt-modal-header">
+        <h3 style="color:#FFF; font-size:1.25rem;">Đăng Ký Khóa Học & Nhận Ưu Đãi</h3>
+        <button type="button" class="bt-modal-close" aria-label="Đóng cửa sổ">&times;</button>
+      </div>
+      <div class="bt-modal-body">
+        <div id="modalSuccessBox" class="bt-form-success"></div>
+        <form id="modalRegisterForm">
+          <div class="bt-form-group">
+            <label class="bt-label">Khóa học / Lịch học</label>
+            <input type="text" id="modalCourseName" class="bt-input" readonly style="background:#F1F5F9; font-weight:600;">
+          </div>
+          <div class="bt-form-group">
+            <label class="bt-label">Họ và tên <span>*</span></label>
+            <input type="text" name="fullname" class="bt-input" placeholder="Nguyễn Văn A" required>
+          </div>
+          <div class="bt-form-group">
+            <label class="bt-label">Số điện thoại / Zalo <span>*</span></label>
+            <input type="tel" name="phone" class="bt-input" placeholder="0908xxxxxx" required>
+          </div>
+          <div class="bt-form-group">
+            <label class="bt-label">Email nhận hướng dẫn vào lớp <span>*</span></label>
+            <input type="email" name="email" class="bt-input" placeholder="email@example.com" required>
+          </div>
+          <button type="submit" class="bt-btn bt-btn--primary bt-btn--lg" style="width:100%; margin-top:8px;">
+            Xác Nhận Giữ Chỗ & Nhận Tài Liệu
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

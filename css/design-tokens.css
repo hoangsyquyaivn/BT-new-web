@@ -1,0 +1,100 @@
+/**
+ * BITTRAIN DESIGN TOKENS
+ * File: BT_new_web/css/design-tokens.css
+ * Chuẩn hóa từ Web-BitTrain-Design.md
+ */
+
+:root {
+  /* --- 1. CORE BRAND COLORS --- */
+  --bt-color-primary: #F5883A;          /* Cam thương hiệu - Nút chính, điểm nhấn */
+  --bt-color-primary-hover: #E07223;    /* Cam đậm khi hover/active */
+  --bt-color-primary-light: #FFF2E8;    /* Nền cam nhạt cho badge, highlight */
+  --bt-color-secondary: #13AFE1;        /* Xanh Cyan công nghệ - Topbar, icon, viền thẻ */
+  --bt-color-secondary-hover: #0E92BD;  /* Xanh Cyan hover */
+  --bt-color-secondary-light: #EBF8FD;  /* Nền xanh nhạt cho badge */
+  --bt-color-peach-hover: #FFD2B2;      /* Màu chữ hover trên nền cam */
+
+  /* --- 2. NEUTRAL & TEXT COLORS --- */
+  --bt-color-text-dark: #1E232A;        /* Tiêu đề chính, văn bản nhấn mạnh */
+  --bt-color-text-body: #3E454F;        /* Văn bản nội dung chính */
+  --bt-color-text-muted: #6B7280;       /* Chú thích, metadata, phụ đề */
+  --bt-color-border-subtle: #E2E8F0;    /* Đường kẻ phân cách, viền card */
+  --bt-color-border-strong: #CBD5E1;    /* Viền input form, viền active */
+  
+  --bt-color-bg-page: #FFFFFF;          /* Nền trang */
+  --bt-color-bg-light: #F8FAFC;         /* Nền section xám nhạt xen kẽ */
+  --bt-color-bg-card: #FFFFFF;          /* Nền thẻ nội dung */
+  --bt-color-bg-dark: #1F2937;          /* Nền khối tối, chân trang footer */
+  --bt-color-bg-dark-accent: #111827;   /* Copyright bar */
+  --bt-color-white: #FFFFFF;
+
+  /* --- 3. FUNCTIONAL / FEEDBACK COLORS --- */
+  --bt-color-success: #10B981;          /* Trạng thái thành công, lớp sắp mở */
+  --bt-color-success-bg: #ECFDF5;
+  --bt-color-warning: #F59E0B;          /* Cảnh báo, số lượng có hạn */
+  --bt-color-warning-bg: #FFFBEB;
+  --bt-color-error: #EF4444;            /* Báo lỗi form */
+  --bt-color-error-bg: #FEF2F2;
+  --bt-color-info: #0284C7;
+  --bt-color-info-bg: #F0F9FF;
+
+  /* --- 4. TYPOGRAPHY SYSTEM --- */
+  --bt-font-heading: 'Arsenal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --bt-font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --bt-font-size-xs: 0.75rem;    /* 12px */
+  --bt-font-size-sm: 0.875rem;   /* 14px */
+  --bt-font-size-base: 1rem;     /* 16px */
+  --bt-font-size-lg: 1.125rem;   /* 18px */
+  --bt-font-size-xl: 1.25rem;    /* 20px */
+  --bt-font-size-2xl: 1.5rem;    /* 24px */
+  --bt-font-size-3xl: 1.875rem;  /* 30px */
+  --bt-font-size-4xl: 2.25rem;   /* 36px */
+  --bt-font-size-5xl: 2.75rem;   /* 44px */
+
+  --bt-font-weight-regular: 400;
+  --bt-font-weight-medium: 500;
+  --bt-font-weight-semibold: 600;
+  --bt-font-weight-bold: 700;
+
+  --bt-line-height-tight: 1.2;
+  --bt-line-height-snug: 1.35;
+  --bt-line-height-normal: 1.5;
+  --bt-line-height-relaxed: 1.65;
+
+  /* --- 5. SPACING SYSTEM (Bội số 4px & 8px) --- */
+  --bt-space-1: 4px;
+  --bt-space-2: 8px;
+  --bt-space-3: 12px;
+  --bt-space-4: 16px;
+  --bt-space-5: 20px;
+  --bt-space-6: 24px;
+  --bt-space-7: 32px;
+  --bt-space-8: 40px;
+  --bt-space-9: 48px;
+  --bt-space-10: 64px;
+  --bt-space-12: 80px;
+
+  /* --- 6. CONTAINER & LAYOUT --- */
+  --bt-container-max: 1200px;
+  --bt-container-narrow: 960px;
+  --bt-header-height: 84px;
+  --bt-topbar-height: 40px;
+
+  /* --- 7. BORDER RADIUS & SHADOWS --- */
+  --bt-radius-sm: 4px;
+  --bt-radius-md: 8px;
+  --bt-radius-lg: 12px;
+  --bt-radius-xl: 16px;
+  --bt-radius-full: 9999px;
+
+  --bt-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --bt-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --bt-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --bt-shadow-hover: 0 12px 24px -4px rgba(245, 136, 58, 0.15), 0 6px 12px -3px rgba(0, 0, 0, 0.05);
+
+  /* --- 8. TRANSITIONS --- */
+  --bt-transition-fast: 150ms ease;
+  --bt-transition-normal: 250ms ease;
+  --bt-transition-slow: 350ms ease;
+}

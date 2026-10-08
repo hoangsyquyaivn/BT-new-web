@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản Phẩm & Chương Trình Đào Tạo - BitTrain</title>
+  <meta name="description" content="Danh mục các chương trình đào tạo Quản lý dự án, Agile/Scrum, luyện thi chứng chỉ quốc tế PMP, PMI-ACP, SAFe và huấn luyện chuyển đổi Agile doanh nghiệp từ BitTrain.">
+  
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 1. TOPBAR -->
+  <aside class="bt-topbar" aria-label="Thông tin liên hệ nhanh">
+    <div class="bt-container bt-topbar__inner">
+      <div class="bt-topbar__contacts">
+        <a href="tel:0908106080" class="bt-topbar__item">
+          <span>📞 Hotline:</span> <strong>0908 106 080 / 0969 182 526</strong>
+        </a>
+        <a href="mailto:bittrain@bittrain.coach" class="bt-topbar__item">
+          <span>✉️</span> <span>bittrain@bittrain.coach</span>
+        </a>
+        <a href="https://zalo.me/0908106080" target="_blank" rel="noopener noreferrer" class="bt-topbar__item">
+          <span>💬 Zalo Tư Vấn</span>
+        </a>
+      </div>
+      <div class="bt-topbar__actions">
+        <a href="https://elearning.bittrain.coach/" target="_blank" rel="noopener noreferrer" class="bt-topbar__elearning">
+          <span>🎓</span> Đăng nhập E-Learning &rarr;
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. HEADER -->
+  <header class="bt-header" role="banner">
+    <div class="bt-container bt-header__inner">
+      <a href="index.html" class="bt-logo" aria-label="BitTrain Trang chủ">
+        <div class="bt-logo__brand">
+          <span class="bt-logo__bit">BIT</span><span class="bt-logo__train">TRAIN</span>
+          <span class="bt-logo__tagline">Agile & Project Management</span>
+        </div>
+      </a>
+
+      <nav class="bt-nav" role="navigation" aria-label="Menu chính">
+        <a href="index.html" class="bt-nav__link">Trang chủ</a>
+        <a href="san-pham.html" class="bt-nav__link bt-nav__link--active">Sản phẩm & Đào tạo</a>
+        <a href="lich-khai-giang.html" class="bt-nav__link">Lịch khai giảng</a>
+        <a href="bai-viet.html" class="bt-nav__link">Bài viết & Insights</a>
+        <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Tư vấn chương trình đào tạo">
+          Nhận tư vấn 1:1
+        </button>
+      </nav>
+
+      <button type="button" class="bt-menu-toggle" aria-label="Mở menu di động">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- 3. PAGE HEADER HERO -->
+  <section class="bt-hero" style="padding: var(--bt-space-9) 0 var(--bt-space-8);">
+    <div class="bt-container" style="text-align: center;">
+      <span class="bt-hero__tag">Danh Mục Sản Phẩm & Dịch Vụ</span>
+      <h1 class="bt-hero__title" style="font-size: 2.75rem;">Chương Trình Đào Tạo & Huấn Luyện Thực Chiến</h1>
+      <p class="bt-hero__desc" style="margin: 0 auto; max-width: 700px;">
+        Hệ thống chương trình đào tạo được may đo theo chuẩn quốc tế khắt khe, kết hợp 17+ năm kinh nghiệm thực tiễn giải quyết bài toán của học viên và tổ chức tại Việt Nam.
+      </p>
+      
+      <!-- Phím tắt cuộn nhanh (BT-11) -->
+      <div style="display:flex; justify-content:center; gap:16px; margin-top:24px; flex-wrap:wrap;">
+        <a href="#ca-nhan" class="bt-btn bt-btn--primary">
+          🎯 Khóa Học Dành Cho Cá Nhân
+        </a>
+        <a href="#doanh-nghiep" class="bt-btn bt-btn--secondary">
+          🏢 Giải Pháp Dành Cho Doanh Nghiệp
+        </a>
+        <a href="#so-sanh" class="bt-btn bt-btn--outline" style="color:#FFF; border-color:#CBD5E1;">
+          ⚖️ Bảng So Sánh Chứng Chỉ
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. KHỐI CÁ NHÂN & CHỨNG CHỈ QUỐC TẾ (BT-12) -->
+  <section class="bt-section" id="ca-nhan">
+    <div class="bt-container">
+      <div class="bt-section-header">
+        <span class="bt-section-tag">Dành Cho Cá Nhân</span>
+        <h2 class="bt-section-title">Luyện Thi Chứng Chỉ Quốc Tế & Quản Lý Dự Án</h2>
+        <p class="bt-section-subtitle">
+          Khóa học tương tác trực tuyến qua Zoom ngoài giờ hành chính, cố vấn 1:1 hồ sơ dự thi, ngân hàng đề thi sát thực tế với tỷ lệ đỗ dẫn đầu thị trường.
+        </p>
+      </div>
+
+      <div class="bt-courses-grid">
+        <!-- Khóa 1: PMP -->
+        <article class="bt-course-card" id="pmp">
+          <div class="bt-course-card__header">
+            <span class="bt-course-card__badge bt-course-card__badge--pmi">PMI® Hoa Kỳ</span>
+            <h3 class="bt-course-card__title">Luyện Thi Chứng Chỉ Quốc Tế PMP®</h3>
+          </div>
+          <div class="bt-course-card__body">
+            <div class="bt-course-card__meta-list">
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🎯</span>
+                <span><strong>Đối tượng:</strong> Project Manager, Team Lead, Kỹ sư muốn chuẩn hóa quản trị dự án toàn cầu.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🏆</span>
+                <span><strong>Đầu ra:</strong> Đủ 35 giờ PDU bắt buộc, tự tin đỗ chứng chỉ PMP (Tỷ lệ đỗ BitTrain 90% ngay lần 1).</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">⏱️</span>
+                <span><strong>Thời lượng & Hình thức:</strong> 14 buổi (Zoom trực tiếp cuối tuần/tối) + Hỗ trợ hồ sơ thi.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">👨‍🏫</span>
+                <span><strong>Giảng viên:</strong> Hoàng Sỹ Quý (PMP, PMI-ACP, SAFe SPC).</span>
+              </div>
+            </div>
+          </div>
+          <div class="bt-course-card__footer">
+            <div>
+              <span style="font-size:0.8rem; color:var(--bt-color-text-muted);">Hình thức:</span>
+              <div style="font-weight:700; color:var(--bt-color-primary);">Online tương tác Zoom</div>
+            </div>
+            <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Luyện thi chứng chỉ PMP">
+              Đăng Ký Học &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- Khóa 2: PMI-ACP -->
+        <article class="bt-course-card" id="pmi-acp">
+          <div class="bt-course-card__header">
+            <span class="bt-course-card__badge bt-course-card__badge--pmi">PMI® Hoa Kỳ</span>
+            <h3 class="bt-course-card__title">Luyện Thi Chứng Chỉ Quốc Tế PMI-ACP®</h3>
+          </div>
+          <div class="bt-course-card__body">
+            <div class="bt-course-card__meta-list">
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🎯</span>
+                <span><strong>Đối tượng:</strong> Scrum Master, Product Owner, Agile PM, Tech Lead muốn thành thạo mọi khuôn khổ Agile.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🏆</span>
+                <span><strong>Đầu ra:</strong> Nắm vững Scrum, Kanban, XP, Lean, TDD, sẵn sàng thi đỗ chứng chỉ PMI-ACP.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">⏱️</span>
+                <span><strong>Thời lượng & Hình thức:</strong> 10 buổi (Zoom tương tác) + Bộ đề thi mô phỏng trọn vẹn.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">👨‍🏫</span>
+                <span><strong>Giảng viên:</strong> Hoàng Sỹ Quý (ICP-ACC, PMI-ACP).</span>
+              </div>
+            </div>
+          </div>
+          <div class="bt-course-card__footer">
+            <div>
+              <span style="font-size:0.8rem; color:var(--bt-color-text-muted);">Hình thức:</span>
+              <div style="font-weight:700; color:var(--bt-color-primary);">Online tương tác Zoom</div>
+            </div>
+            <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Luyện thi chứng chỉ PMI-ACP">
+              Đăng Ký Học &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- Khóa 3: Scaled Agile SAFe -->
+        <article class="bt-course-card" id="safe">
+          <div class="bt-course-card__header">
+            <span class="bt-course-card__badge bt-course-card__badge--safe">Scaled Agile Mỹ</span>
+            <h3 class="bt-course-card__title">Khóa Học Scaled Agile (Leading SAFe / POPM)</h3>
+          </div>
+          <div class="bt-course-card__body">
+            <div class="bt-course-card__meta-list">
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🎯</span>
+                <span><strong>Đối tượng:</strong> Lãnh đạo, Solution Architect, PM/PO làm việc trong tập đoàn quy mô lớn.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🏆</span>
+                <span><strong>Đầu ra:</strong> Khả năng mở rộng Agile đa đội nhóm (Agile Release Train - ART) + 100% đỗ chứng chỉ SAFe.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">⏱️</span>
+                <span><strong>Thời lượng & Hình thức:</strong> 4 buổi chuyên sâu + Tài liệu ủy quyền từ Scaled Agile.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">👨‍🏫</span>
+                <span><strong>Giảng viên:</strong> Hoàng Sỹ Quý (SAFe SPC được chứng nhận).</span>
+              </div>
+            </div>
+          </div>
+          <div class="bt-course-card__footer">
+            <div>
+              <span style="font-size:0.8rem; color:var(--bt-color-text-muted);">Hình thức:</span>
+              <div style="font-weight:700; color:var(--bt-color-primary);">Online tương tác Zoom</div>
+            </div>
+            <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Khóa học Scaled Agile SAFe">
+              Đăng Ký Học &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- Khóa 4: Thực hành Agile Scrum -->
+        <article class="bt-course-card" id="agile-scrum">
+          <div class="bt-course-card__header">
+            <span class="bt-course-card__badge bt-course-card__badge--coach">Thực Chiến</span>
+            <h3 class="bt-course-card__title">Thực Hành Quản Lý Dự Án Agile Scrum</h3>
+          </div>
+          <div class="bt-course-card__body">
+            <div class="bt-course-card__meta-list">
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🎯</span>
+                <span><strong>Đối tượng:</strong> Đội ngũ phát triển, Scrum Master mới bắt đầu, Trưởng dự án nội bộ.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🏆</span>
+                <span><strong>Đầu ra:</strong> Thành thạo vận hành Sprint, Backlog Grooming, Daily Scrum, Retro và giải quyết mâu thuẫn đội ngũ.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">⏱️</span>
+                <span><strong>Thời lượng:</strong> 6 buổi thực hành trên case study dự án thật.</span>
+              </div>
+            </div>
+          </div>
+          <div class="bt-course-card__footer">
+            <div>
+              <span style="font-size:0.8rem; color:var(--bt-color-text-muted);">Hình thức:</span>
+              <div style="font-weight:700; color:var(--bt-color-primary);">Zoom / In-house</div>
+            </div>
+            <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Thực hành Agile Scrum">
+              Đăng Ký Học &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- Khóa 5: Design Thinking & JTBD -->
+        <article class="bt-course-card" id="design-thinking">
+          <div class="bt-course-card__header">
+            <span class="bt-course-card__badge bt-course-card__badge--b2b">Sản Phẩm & Khách Hàng</span>
+            <h3 class="bt-course-card__title">Design Thinking Với Job-To-Be-Done (JTBD)</h3>
+          </div>
+          <div class="bt-course-card__body">
+            <div class="bt-course-card__meta-list">
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🎯</span>
+                <span><strong>Đối tượng:</strong> Product Manager, UX/UI, Business Analyst, Nhà sáng lập khởi nghiệp.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🏆</span>
+                <span><strong>Đầu ra:</strong> Thấu cảm khách hàng chính xác, tìm ra "việc cần làm" để tạo tính năng sản phẩm bán chạy.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">⏱️</span>
+                <span><strong>Thời lượng:</strong> 4 buổi workshop thực hành mô hình.</span>
+              </div>
+            </div>
+          </div>
+          <div class="bt-course-card__footer">
+            <div>
+              <span style="font-size:0.8rem; color:var(--bt-color-text-muted);">Hình thức:</span>
+              <div style="font-weight:700; color:var(--bt-color-primary);">Workshop tương tác</div>
+            </div>
+            <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Design Thinking với Job-To-Be-Done">
+              Đăng Ký Học &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- Khóa 6: E-Learning Chủ Động -->
+        <article class="bt-course-card">
+          <div class="bt-course-card__header" style="background:#0F766E;">
+            <span class="bt-course-card__badge" style="background:#14B8A6; color:#FFF;">Tự Học Trực Tuyến</span>
+            <h3 class="bt-course-card__title">Khóa Học E-Learning QLDA Chuyên Nghiệp</h3>
+          </div>
+          <div class="bt-course-card__body">
+            <div class="bt-course-card__meta-list">
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🎯</span>
+                <span><strong>Đối tượng:</strong> Người bận rộn muốn học theo tốc độ cá nhân mọi lúc mọi nơi.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">🏆</span>
+                <span><strong>Đầu ra:</strong> Video bài giảng chi tiết, hệ thống quiz trắc nghiệm và diễn đàn hỏi đáp chuyên gia.</span>
+              </div>
+              <div class="bt-course-card__meta-item">
+                <span class="bt-course-card__meta-icon">⏱️</span>
+                <span><strong>Thời hạn:</strong> Truy cập 12 tháng không giới hạn.</span>
+              </div>
+            </div>
+          </div>
+          <div class="bt-course-card__footer">
+            <div>
+              <span style="font-size:0.8rem; color:var(--bt-color-text-muted);">Hình thức:</span>
+              <div style="font-weight:700; color:#0F766E;">E-Learning 24/7</div>
+            </div>
+            <a href="https://elearning.bittrain.coach/" target="_blank" rel="noopener noreferrer" class="bt-btn bt-btn--secondary bt-btn--sm">
+              Vào Học Ngay &rarr;
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. BẢNG SO SÁNH CHỨNG CHỈ (BT-15) -->
+  <section class="bt-section bt-section--light" id="so-sanh">
+    <div class="bt-container">
+      <div class="bt-section-header">
+        <span class="bt-section-tag">Hướng Dẫn Lựa Chọn</span>
+        <h2 class="bt-section-title">Tôi Nên Chọn Khóa Học & Chứng Chỉ Nào?</h2>
+        <p class="bt-section-subtitle">
+          Bảng đối chiếu tiêu chí giữa các chứng chỉ quốc tế uy tín giúp bạn định hình lộ trình phát triển sự nghiệp chính xác nhất.
+        </p>
+      </div>
+
+      <div class="bt-comparison-wrap">
+        <table class="bt-comparison-table">
+          <thead>
+            <tr>
+              <th style="width:20%;">Tiêu chí</th>
+              <th style="width:26%;">PMP® (PMI Mỹ)</th>
+              <th style="width:26%;">PMI-ACP® (PMI Mỹ)</th>
+              <th style="width:28%;">Leading SAFe® (Scaled Agile)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mục tiêu chính</td>
+              <td>Quản trị dự án toàn diện (Agile, Thác nước & Hybrid)</td>
+              <td>Chuyên gia phương pháp linh hoạt (Agile & Lean)</td>
+              <td>Triển khai Agile quy mô tập đoàn lớn (Enterprise)</td>
+            </tr>
+            <tr>
+              <td>Đơn vị cấp bằng</td>
+              <td>Project Management Institute (PMI)</td>
+              <td>Project Management Institute (PMI)</td>
+              <td>Scaled Agile, Inc. (Hoa Kỳ)</td>
+            </tr>
+            <tr>
+              <td>Yêu cầu đầu vào</td>
+              <td>3-5 năm kinh nghiệm quản lý dự án + 35 PDU</td>
+              <td>1-2 năm kinh nghiệm dự án chung + 21 contact hours</td>
+              <td>Có hiểu biết về Scrum / Kanban / Quản trị phần mềm</td>
+            </tr>
+            <tr>
+              <td>Mức độ nhận diện</td>
+              <td>Tiêu chuẩn vàng toàn cầu cho mọi ngành nghề</td>
+              <td>Chứng chỉ danh giá nhất cho người làm Agile</td>
+              <td>Tiêu chuẩn hàng đầu tại các tập đoàn viễn thông, tài chính</td>
+            </tr>
+            <tr>
+              <td>Tỷ lệ đỗ tại BitTrain</td>
+              <td><strong style="color:var(--bt-color-primary);">90%</strong> ngay trong kỳ thi đầu tiên</td>
+              <td><strong style="color:var(--bt-color-primary);">95%</strong> ngay trong kỳ thi đầu tiên</td>
+              <td><strong style="color:var(--bt-color-primary);">100%</strong> ngay trong kỳ thi đầu tiên</td>
+            </tr>
+            <tr>
+              <td>Hành động đề xuất</td>
+              <td>
+                <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Tư vấn lộ trình PMP">
+                  Đăng Ký PMP
+                </button>
+              </td>
+              <td>
+                <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Tư vấn lộ trình PMI-ACP">
+                  Đăng Ký PMI-ACP
+                </button>
+              </td>
+              <td>
+                <button type="button" class="bt-btn bt-btn--primary bt-btn--sm js-open-modal" data-course="Tư vấn lộ trình SAFe">
+                  Đăng Ký SAFe
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. KHỐI GIẢI PHÁP DOANH NGHIỆP (BT-17) -->
+  <section class="bt-section" id="doanh-nghiep">
+    <div class="bt-container">
+      <div class="bt-section-header">
+        <span class="bt-section-tag">Dành Cho Tổ Chức</span>
+        <h2 class="bt-section-title">Huấn Luyện Chuyển Đổi Agile & Đào Tạo In-House</h2>
+        <p class="bt-section-subtitle">
+          BitTrain không chỉ giảng dạy lý thuyết, chúng tôi trực tiếp đóng vai trò Huấn luyện viên (Agile Coach) và Điều phối viên (Facilitator) đồng hành cùng doanh nghiệp từ 3 đến 6 tháng.
+        </p>
+      </div>
+
+      <!-- Vấn đề BitTrain giải quyết -->
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 40px;">
+        <div style="background:#FFF; border:1px solid #E2E8F0; padding:24px; border-radius:12px; box-shadow:var(--bt-shadow-sm);">
+          <div style="font-size:1.75rem; margin-bottom:8px;">⚠️</div>
+          <h4 style="font-size:1.2rem; margin-bottom:8px;">Dự án trễ hạn & Đội ngũ rời rạc</h4>
+          <p style="font-size:0.9rem; color:var(--bt-color-text-muted);">Các bộ phận CNTT và nghiệp vụ bất đồng ngôn ngữ, quy trình bàn giao cồng kềnh làm chậm thời gian ra mắt thị trường.</p>
+        </div>
+        <div style="background:#FFF; border:1px solid #E2E8F0; padding:24px; border-radius:12px; box-shadow:var(--bt-shadow-sm);">
+          <div style="font-size:1.75rem; margin-bottom:8px;">💡</div>
+          <h4 style="font-size:1.2rem; margin-bottom:8px;">Áp dụng Agile nửa vời (Zombie Scrum)</h4>
+          <p style="font-size:0.9rem; color:var(--bt-color-text-muted);">Lập bảng Kanban và họp hằng ngày nhưng tư duy chỉ huy áp đặt vẫn còn nguyên, khiến nhân sự mệt mỏi và phản kháng.</p>
+        </div>
+        <div style="background:#FFF; border:1px solid #E2E8F0; padding:24px; border-radius:12px; box-shadow:var(--bt-shadow-sm);">
+          <div style="font-size:1.75rem; margin-bottom:8px;">🚀</div>
+          <h4 style="font-size:1.2rem; margin-bottom:8px;">Giải pháp thực chiến từ BitTrain</h4>
+          <p style="font-size:0.9rem; color:var(--bt-color-text-muted);">Chuyển hóa nhận thức cấp lãnh đạo (Agile Leadership), thiết lập cơ chế tự chủ cho đội ngũ và đo lường kết quả bằng chỉ số kinh doanh thật.</p>
+        </div>
+      </div>
+
+      <!-- Quy trình 4 bước huấn luyện doanh nghiệp -->
+      <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:16px; padding:32px; margin-bottom: 32px;">
+        <h3 style="text-align:center; margin-bottom: 24px; font-size:1.6rem;">Quy Trình 4 Bước Huấn Luyện Chuyển Đổi Thực Tế</h3>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+          <div>
+            <div style="font-family:var(--bt-font-heading); font-size:2rem; font-weight:700; color:var(--bt-color-primary);">01</div>
+            <h4 style="font-size:1.1rem; margin-bottom:6px;">Khảo sát & Đánh giá</h4>
+            <p style="font-size:0.85rem; color:var(--bt-color-text-muted);">Phỏng vấn lãnh đạo, đánh giá mức độ trưởng thành Agile và điểm nghẽn của quy trình hiện tại.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--bt-font-heading); font-size:2rem; font-weight:700; color:var(--bt-color-primary);">02</div>
+            <h4 style="font-size:1.1rem; margin-bottom:6px;">Đào tạo nền tảng</h4>
+            <p style="font-size:0.85rem; color:var(--bt-color-text-muted);">Đồng bộ ngôn ngữ chung cho toàn bộ ban lãnh đạo, Product Owner, Scrum Master và đội dự án.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--bt-font-heading); font-size:2rem; font-weight:700; color:var(--bt-color-primary);">03</div>
+            <h4 style="font-size:1.1rem; margin-bottom:6px;">Coaching & Đồng hành</h4>
+            <p style="font-size:0.85rem; color:var(--bt-color-text-muted);">Trực tiếp tham gia các phiên lập kế hoạch Sprint, điều phối giải quyết vấn đề và uốn nắn thói quen làm việc mới.</p>
+          </div>
+          <div>
+            <div style="font-family:var(--bt-font-heading); font-size:2rem; font-weight:700; color:var(--bt-color-primary);">04</div>
+            <h4 style="font-size:1.1rem; margin-bottom:6px;">Đo lường & Bàn giao</h4>
+            <p style="font-size:0.85rem; color:var(--bt-color-text-muted);">Đánh giá hiệu suất cải thiện (Time-to-market, tỷ lệ lỗi, mức độ hài lòng) và chuyển giao để doanh nghiệp tự vận hành.</p>
+          </div>
+        </div>
+        <div style="text-align:center; margin-top:32px;">
+          <button type="button" class="bt-btn bt-btn--primary bt-btn--lg js-open-modal" data-course="Trao đổi nhu cầu đào tạo doanh nghiệp">
+            Trao Đổi Nhu Cầu Đào Tạo Doanh Nghiệp &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER CHUẨN HÓA -->
+  <footer class="bt-footer" role="contentinfo">
+    <div class="bt-container">
+      <div class="bt-footer-grid">
+        <div>
+          <div class="bt-logo" style="margin-bottom: 16px;">
+            <div class="bt-logo__brand" style="font-size:1.6rem;">
+              <span class="bt-logo__bit">BIT</span><span class="bt-logo__train" style="color:#FFF;">TRAIN</span>
+            </div>
+          </div>
+          <p style="color:#CBD5E1; font-weight:600; margin-bottom:12px;">CÔNG TY TNHH TƯ VẤN VÀ ĐÀO TẠO BITTRAIN</p>
+          <div class="bt-footer-contact-item">
+            <span>📍</span> <span>10 Đường TA35, Phường Thới An, Thành phố Hồ Chí Minh</span>
+          </div>
+          <div class="bt-footer-contact-item">
+            <span>📞</span> <span>Hotline: 0908 106 080 / 0969 182 526</span>
+          </div>
+          <div class="bt-footer-contact-item">
+            <span>✉️</span> <span>Email: bittrain@bittrain.coach</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="bt-footer-col__title">Khóa Học & Chứng Chỉ</h4>
+          <ul class="bt-footer-links">
+            <li><a href="san-pham.html#pmp">Luyện thi PMP® Quốc Tế</a></li>
+            <li><a href="san-pham.html#pmi-acp">Luyện thi PMI-ACP®</a></li>
+            <li><a href="san-pham.html#safe">Scaled Agile Framework (SAFe)</a></li>
+            <li><a href="san-pham.html#agile-scrum">Thực hành Agile / Scrum</a></li>
+            <li><a href="san-pham.html#design-thinking">Design Thinking & JTBD</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="bt-footer-col__title">Dành Cho Doanh Nghiệp</h4>
+          <ul class="bt-footer-links">
+            <li><a href="san-pham.html#doanh-nghiep">Huấn luyện chuyển đổi Agile</a></li>
+            <li><a href="san-pham.html#doanh-nghiep">Agile for Business Teams</a></li>
+            <li><a href="san-pham.html#doanh-nghiep">Đào tạo Agile Leadership</a></li>
+            <li><a href="san-pham.html#doanh-nghiep">Quản trị nhân sự Agile HR</a></li>
+            <li><a href="lich-khai-giang.html">Lịch khai giảng các lớp</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="bt-footer-col__title">Tài Nguyên & Kết Nối</h4>
+          <ul class="bt-footer-links">
+            <li><a href="bai-viet.html">BitTrain Insights & Cẩm nang</a></li>
+            <li><a href="https://elearning.bittrain.coach/" target="_blank" rel="noopener noreferrer">Cổng E-Learning Học Viên</a></li>
+            <li><a href="https://www.facebook.com/bittrain.coach" target="_blank" rel="noopener noreferrer">Fanpage Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/hoangsyquypmp/" target="_blank" rel="noopener noreferrer">LinkedIn Chuyên Gia</a></li>
+            <li><a href="https://zalo.me/0908106080" target="_blank" rel="noopener noreferrer">Tư vấn qua Zalo 24/7</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bt-footer-bottom">
+      <div class="bt-container bt-footer-bottom__inner">
+        <div>© 2026 CÔNG TY TNHH TƯ VẤN VÀ ĐÀO TẠO BITTRAIN. All rights reserved.</div>
+        <div>Cam kết chất lượng thực chiến – Đồng hành thành công cùng học viên và doanh nghiệp.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 8. MODAL ĐĂNG KÝ NHANH DÙNG CHUNG -->
+  <div id="registrationModal" class="bt-modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="bt-modal">
+      <div class="bt-modal-header">
+        <h3 style="color:#FFF; font-size:1.25rem;">Đăng Ký Khóa Học & Tư Vấn</h3>
+        <button type="button" class="bt-modal-close" aria-label="Đóng cửa sổ">&times;</button>
+      </div>
+      <div class="bt-modal-body">
+        <div id="modalSuccessBox" class="bt-form-success"></div>
+        <form id="modalRegisterForm">
+          <div class="bt-form-group">
+            <label class="bt-label">Khóa học / Dịch vụ quan tâm</label>
+            <input type="text" id="modalCourseName" class="bt-input" readonly style="background:#F1F5F9; font-weight:600;">
+          </div>
+          <div class="bt-form-group">
+            <label class="bt-label">Họ và tên <span>*</span></label>
+            <input type="text" name="fullname" class="bt-input" placeholder="Nguyễn Văn A" required>
+          </div>
+          <div class="bt-form-group">
+            <label class="bt-label">Số điện thoại / Zalo <span>*</span></label>
+            <input type="tel" name="phone" class="bt-input" placeholder="0908xxxxxx" required>
+          </div>
+          <div class="bt-form-group">
+            <label class="bt-label">Email nhận giáo trình & học phí <span>*</span></label>
+            <input type="email" name="email" class="bt-input" placeholder="email@example.com" required>
+          </div>
+          <button type="submit" class="bt-btn bt-btn--primary bt-btn--lg" style="width:100%; margin-top:8px;">
+            Gửi Đăng Ký Ngay
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
